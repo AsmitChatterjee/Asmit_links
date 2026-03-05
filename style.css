@@ -1,0 +1,120 @@
+body{
+margin:0;
+padding:0;
+font-family:'Segoe UI',sans-serif;
+background:black;
+color:white;
+text-align:center;
+overflow-x:hidden;
+opacity:0;
+transition:opacity 1.2s;
+}
+
+body.fade{
+opacity:1;
+}
+
+.fadeOut{
+opacity:0;
+}
+
+.center{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+}
+
+.glass{
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(15px);
+border-radius:20px;
+padding:40px;
+box-shadow:0 0 30px rgba(255,255,255,0.1);
+}
+
+.container{
+max-width:750px;
+margin:auto;
+margin-top:80px;
+color:white;
+}
+
+.glow{
+font-size:42px;
+text-shadow:0 0 15px #ff8fd8,0 0 40px #ff8fd8;
+}
+
+#typewriter{
+color:white;
+white-space:pre-line;
+font-size:22px;
+line-height:1.7;
+margin-top:30px;
+min-height:200px;
+}
+
+.thankyou{
+font-size:28px;
+margin-top:40px;
+animation:pulse 2s infinite alternate;
+color:white;
+}
+
+@keyframes pulse{
+from{text-shadow:0 0 5px white}
+to{text-shadow:0 0 25px pink}
+}
+
+.giftButton{
+margin-top:30px;
+padding:15px 35px;
+font-size:18px;
+border:none;
+border-radius:40px;
+background:linear-gradient(45deg,#ff6ec7,#ff9de6);
+color:white;
+cursor:pointer;
+box-shadow:0 0 20px #ff9de6;
+}
+
+.heartBtn{
+margin-top:40px;
+padding:12px 25px;
+border:none;
+border-radius:30px;
+background:#ff6ec7;
+color:white;
+cursor:pointer;
+box-shadow:0 0 10px pink;
+}
+
+.ending{
+margin-top:80px;
+font-size:20px;
+opacity:0.9;
+color:white;
+}
+
+.petal{
+position:fixed;
+top:-20px;
+width:12px;
+height:12px;
+background:pink;
+border-radius:70% 70% 70% 0;
+opacity:0.8;
+animation:fall linear;
+}
+
+@keyframes fall{
+0%{transform:translateY(0) rotate(0);}
+100%{transform:translateY(100vh) rotate(360deg);}
+}
+
+canvas{
+position:fixed;
+top:0;
+left:0;
+pointer-events:none;
+}
