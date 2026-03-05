@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Farewell Gift</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="fade">
+
+<div class="center glass">
+
+<h1 class="glow">A Small Farewell Gift 🌸</h1>
+
+<button class="giftButton" onclick="openGift()">
+Open Your Farewell Gift
+</button>
+
+</div>
+
+<script>
+function openGift(){
+document.body.classList.add("fadeOut")
+setTimeout(()=>{
+window.location="message.html"
+},800)
+}
+</script>
+
+</body>
+</html>
