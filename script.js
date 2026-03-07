@@ -41,7 +41,7 @@ function typeWriter(){
   if(i < text.length){
     document.getElementById("typewriter").innerHTML += text.charAt(i);
     i++;
-    setTimeout(typeWriter,90);
+    setTimeout(typeWriter,70);
   }
 }
 
