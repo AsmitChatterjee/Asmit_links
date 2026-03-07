@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", function () {
+
 const text = `Chaichilam na je tomar farewell hok.
 Tomake r amra school e pabo na.
 Sotti I tomake khub miss korbo.
@@ -30,35 +32,22 @@ and I just really loved it.
 Not all seniors become special…
 but you did.
 
-Jani school theke tomader farewell dicche na
-but ami chaina je TUMI,
-amr SPECIAL DIDII farewell na peye chole jao.
-
-Tai ami ei chotto ekta gift banalam.
-Hope u really liked it.
-
-Always remember
-kichu dorkar hole
-ei tomar bhai or junior
-sobsomoi tomar jonno available.
-
-Ami je tuku parbo help korbo.
-
-Distance may increase,
-but respect and memories never decrease.
-
 HAPPY FAREWELL AISHANI DIII…
 MY FAVOURITE DIDII 🌟`;
 
 let i = 0;
 
 function typeWriter(){
-if(i < text.length){
-document.getElementById("typewriter").innerHTML += text.charAt(i);
-i++;
-setTimeout(typeWriter,90);
+  if(i < text.length){
+    document.getElementById("typewriter").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typeWriter,160);
+  }
 }
-}
+
+typeWriter();
+
+});
 
 if(document.getElementById("typewriter")){
 typeWriter();
