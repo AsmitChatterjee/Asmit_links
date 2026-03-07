@@ -155,3 +155,10 @@ setInterval(firework,1500)
 animate()
 
 }
+window.addEventListener("click", () => {
+  const music = document.getElementById("bgm");
+  if (music) {
+    music.volume = 0.4;
+    music.play();
+  }
+});
